@@ -1,5 +1,7 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital@1&family=Open+Sans:wght@300&family=Roboto:ital,wght@0,400;1,300&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Macondo&display=swap'); */
 
 /* CSS Variables */
 :root {
@@ -22,10 +24,16 @@ h2,
 h3 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
+    text-transform: uppercase;
 }
 
 .sub-heading-color {
     color: var(--highlight-color);
+}
+
+.section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* Navbar */
@@ -38,14 +46,8 @@ h3 {
     width: 30px;
 }
 
-/* grid visualisation CSS for testing */
+/* Header */
 
-/* .container,
-.row {
-    border: 2px solid black;
+#header .lead {
+    font-family: var(--secondary-font);
 }
-
-.col-12 {
-    border: 2px solid white;
-    background-color: lightgray;
-} */
