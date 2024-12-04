@@ -104,11 +104,15 @@ h2 {
 #contact .social-links i {
     color: var(--highlight-color-light);
     font-size: 1.9rem;
+    transition: color 0.3s ease-in-out;
 }
 
 #contact .social-links i:hover {
     color: var(--secondary-color);
-    transition: color 0.3s ease-in-out;
+}
+
+#contact .table-dark * {
+    background-color: transparent;
 }
 
 /* Media queries */
