@@ -215,6 +215,63 @@
                 </div>
             </div>
         </section>
+        <section id="reserve-game-form" class="section container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <h2 class="display-6 text-center">Reserve a game</h2>
+                    <p>
+                        Reserve a board game for your next visit to Boardwalk Games. Pick
+                        your challenge, and let the adventure begin! Fill out your details
+                        and preferred game below, and we'll have it set aside for you when
+                        you arrive.
+                    </p>
+
+                    <!-- reserve game form -->
+                    <!-- action set on the form to provide users with feedback when the form has been submitted.
+                            We have not learned how to handle form data yet, so the form data is not actually sent anywhere for this project -->
+                    <form action="success.html" method="GET">
+                        <div class="row">
+                            <div class="col-12 col-lg-4 mb-3">
+                                <label for="full-name" class="form-label">Full name</label>
+                                <input id="full-name" type="text" class="form-control" name="full-name" required>
+                            </div>
+                            <div class="col-12 col-lg-4 mb-3">
+                                <label for="phone-number" class="form-label">Phone number</label>
+                                <input id="phone-number" type="number" class="form-control" name="phone-number"
+                                    required>
+                            </div>
+                            <div class="col-12 col-lg-4 mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input id="email" type="email" class="form-control" name="email" required>
+                            </div>
+                            <div class="col-12 col-lg-8 mb-3">
+                                <label for="game-selection" class="form-label">Select game</label>
+                                <select id="game-selection" class="form-select" name="game-selection" required>
+                                    <!-- value="" makes this option a placeholder and won't be accepted as a valid selection, 
+                                                ensuring the required attribute on the <select> element works -->
+                                    <option value="" selected>Select game</option>
+                                    <option value="galaxy-pioneers">Galaxy Pioneers</option>
+                                    <option value="mystic-woods">Mystic Woods</option>
+                                    <option value="captains-gambit">Captain's Gambit</option>
+                                    <option value="critter-quest">Critter Quest</option>
+                                    <option value="setters-of-catan">Settlers of Catan</option>
+                                    <option value="monopoly">Monopoly</option>
+                                    <option value="exploding-kittens">Exploding Kittens</option>
+                                    <option value="cluedo">Cluedo</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-lg-4 mb-3">
+                                <label for="date" class="form-label">Requested date</label>
+                                <input id="date" type="date" class="form-control" name="date" required>
+                            </div>
+                            <div class="col-12 text-end">
+                                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- footer / contact section -->

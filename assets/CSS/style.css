@@ -40,33 +40,7 @@ h2 {
 }
 
 .section {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-/* buttons */
-
-.custom-button-filled {
-    border: 2px solid var(--highlight-color);
-    background-color: var(--highlight-color);
-    color: white;
-}
-
-.custom-button-filled:hover {
-    border: 2px solid var(--secondary-color);
-    background-color: var(--secondary-color);
-    color: white;
-}
-
-.custom-button-outline {
-    border: 3px solid var(--highlight-color);
-    padding: 7px 25px;
-    color: var(--highlight-color);
-}
-
-.custom-button-outline:hover {
-    background-color: var(--highlight-color);
-    color: white;
+    padding-top: 4rem;
 }
 
 /* Navbar */
@@ -95,6 +69,27 @@ h2 {
 
 #services .card {
     margin-bottom: 1.5rem;
+}
+
+/* Events */
+
+#events .table {
+    /* events table font size small enough that 
+      the table doesn't overflow on xs screens. 
+      Size set back to 1rem in a media query 
+      for sm screens and up */
+    font-size: 0.7rem;
+}
+
+.student-discount {
+    background-color: var(--highlight-color);
+    font-weight: bold;
+    color: white;
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    padding: 5px 10px;
+    font-size: 0.8rem;
 }
 
 /* Game library cards */
@@ -141,6 +136,17 @@ h2 {
 }
 
 /* Media queries */
+
+/* Small screens and up */
+@media screen and (min-width: 576px) {
+    /* increase font size in events table when screen size is large enough */
+    #events .table {
+        font-size: 1rem;
+    }
+    .student-discount {
+        font-size: 1rem;
+    }
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
